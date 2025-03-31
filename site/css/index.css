@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin-left: auto;
+    margin-right:auto;
+    width:100%;
+    max-width:1300px;
+}
+
+
+
+img{
+    width:100%;
+    max-width:1300px;
+}
