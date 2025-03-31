@@ -15,6 +15,9 @@ body{
     max-width:var(--max-width);
     font-size:20px;
 }
+main{
+    width:100%;
+}
 header{
     width:100%;
     max-width:var(--max-width);
@@ -27,14 +30,61 @@ header{
     align-content: space-between;
     justify-content: center;
     justify-items: center;
+    justify-items: start;
+    transition: all ease-in 3s;
 }
 header > nav{
-    width:var(--center-width);
+    max-width:var(--center-width);
+    width:100%;
+    max-width:var(--center-width);
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height:70px;
+    align-content:center;
+    justify-content: center;
+    align-items: center;
+}
+header > nav > strong{
+    font-size:30px;
+}
+header > nav > div{
+    min-height: 30px;
+    display:grid;
+    align-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+header > nav > div > span:nth-child(2){
+    width:57px
+}
+header > h1{
+    text-shadow:-2px -2px 3px black;
 }
 header > nav > ul > li{
     display:inline-block;
 }
-
+header > nav > button{
+    width:100%;
+    max-width:152px;
+    height:58px;
+    background-color: #DF6951;
+    color:white;
+    border-radius: 7px;
+    border: none;
+    font-size:20px;
+}
+@media(max-width:700px){
+    header > nav > ul{
+        display:none;
+    }
+    header > nav > div > span{
+        display:block;
+        width:70px;
+        height:3px;
+        border-radius:7px;
+        background-color: #DF6951;
+    }
+}
 img{
     width:100%;
     max-width:var(--max-width);
