@@ -2,18 +2,42 @@
     margin:0;
     padding:0;
 }
+
+:root{
+    --max-width:1920px;
+    --same-width:100%;
+    --center-width:1278px;
+}
 body{
     margin-left: auto;
     margin-right:auto;
     width:100%;
-    max-width:1300px;
+    max-width:var(--max-width);
+    font-size:20px;
 }
-
-
+header{
+    width:100%;
+    max-width:var(--max-width);
+    background: url("../img/liner.webp");
+    background-position: center center;
+    min-height:100vh;
+    color:white;
+    text-shadow:2px 2px black;
+    display:grid;
+    align-content: space-between;
+    justify-content: center;
+    justify-items: center;
+}
+header > nav{
+    width:var(--center-width);
+}
+header > nav > ul > li{
+    display:inline-block;
+}
 
 img{
     width:100%;
-    max-width:1300px;
+    max-width:var(--max-width);
 }
 body > main > article > ol,body > main > article > ul{
     margin-left:17px;
