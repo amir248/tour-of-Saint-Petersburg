@@ -114,3 +114,29 @@ img{
 body > main > article > ol,body > main > article > ul{
     margin-left:17px;
 }
+
+.boxMenu{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    top:0;
+    width:100%;
+    height:0;
+    background-color: #DF6951;
+    font-size:0px;
+    position:fixed;
+    transition:all 1s;
+    opacity:0;
+}
+.boxMenu > a{
+    font-size:0;
+    color:white;
+    text-shadow:black 1px 1px;
+    text-decoration:none;
+    transition: all 1s;
+}
+.boxMenu > a:hover{
+    color:aqua;
+    transition: all 1s;
+}
