@@ -43,6 +43,7 @@ header > nav{
     align-content:center;
     justify-content: center;
     align-items: center;
+    transition:all 1s;
 }
 header > nav > strong{
     font-size:30px;
@@ -53,9 +54,11 @@ header > nav > div{
     align-content: space-between;
     justify-content: center;
     align-items: center;
+    transition:all 1s;
 }
 header > nav > div > span:nth-child(2){
-    width:57px
+    width:57px;
+    transition:all 1s;
 }
 header > h1{
     text-shadow:-2px -2px 3px black;
@@ -63,6 +66,16 @@ header > h1{
 }
 header > nav > ul > li{
     display:inline-block;
+    transition:all 1s;
+}
+header > nav > ul > li > a{
+    color:white;
+    text-shadow:black 1px 1px;
+    text-decoration:none;
+}
+header > nav > ul > li > a:hover{
+    color:#DF6951;
+    transition:all 1s;
 }
 header > nav > button{
     width:100%;
@@ -75,15 +88,22 @@ header > nav > button{
     font-size:20px;
 }
 @media(max-width:700px){
+    
     header > nav > ul{
         display:none;
     }
+    
     header > nav > div > span{
         display:block;
         width:70px;
         height:3px;
         border-radius:7px;
         background-color: #DF6951;
+    }
+}
+@media(min-width:700px){
+    body > main > header > nav > div{
+        display:none;
     }
 }
 img{
