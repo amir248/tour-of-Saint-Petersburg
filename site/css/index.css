@@ -22,7 +22,7 @@ main{
 header{
     width:100%;
     max-width:var(--max-width);
-    background: url("../img/liner.webp");
+    background: url("../img/origin.webp");
     background-position: center center;
     min-height:100vh;
     color:white;
@@ -161,23 +161,92 @@ article{
     align-items: center;
     justify-items: center;
 }
+.category > span{
+    text-transform: uppercase;
+    color:#DF6951;
+}
 .category > section > div > img{
     width:72px;
 }
-.category > section > div{
-    min-width:150px;
-    width:100%;
-    max-width:200px;
-}
+/* .category > section > div{
+    
+} */
 .category > section{
     display:grid;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* justify-items: center; */
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 
     width:100%;
     max-width:1300px;
     /* flex-wrap:wrap; */
     grid-template-columns: repeat(auto-fill, minmax(120px,320px));
 
+}
+.category > section > div{
+    min-width:150px;
+    width:100%;
+    min-height:190px;
+    max-width:200px;
+    padding: 17px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    box-shadow:3px 3px 13px black;
+    border-radius: 37px;
+    gap: 3px;
+    margin:17px;
+}
+.twoSlide{
+    width:100%;
+    display:grid;
+    justify-content: space-around;
+    grid-template-columns:repeat(auto-fill,minmax(583px,744px));
+}
+.twoSlide > div > picture > img{
+    width:100%;
+    max-width:744px;
+    height:762px;
+    border-radius:337px 337px 0 0;
+}
+/* body > main > article > section.twoSlide > div:nth-child(2) */
+.twoSlide > div:nth-child(2){
+    width:583px;
+    min-height:380px;
+    display:grid;
+}
+.twoSlide > div:nth-child(2) > button{
+    width:176px;
+    height:57px;
+    background-color: #DF6951;
+    border-radius: 17px;
+    border:none;
+    color:white;
+    text-shadow:2px 2px black;
+}
+body > main > article > section.twoSlide > div:nth-child(2) > span{
+    text-transform: uppercase;
+    color:#DF6951;
+}
+body > main > article > section.twoSlide > div:nth-child(2) > ol{
+    margin-left:17px;
+}
+
+
+.holiday{
+    width:100%;
+    max-width:1920px;
+    height:399px;
+    background-image: url("../img/lineSPB.png");
+    background-position: center center;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.holiday > h3{
+    color:white;
+    font-size:70px;
+    text-shadow: 2px 2px black;
 }
