@@ -208,6 +208,10 @@ article > p{
     display:grid;
     justify-content: space-around;
     grid-template-columns:repeat(auto-fill,minmax(583px,744px));
+    margin-top:70px;
+}
+body > main > article > section.twoSlide > div:nth-child(2) > ol{
+    width: 100%;
 }
 @media(max-width:700px){
     .twoSlide{
@@ -226,7 +230,7 @@ article > p{
 
 /* body > main > article > section.twoSlide > div:nth-child(2) */
 .twoSlide > div:nth-child(2){
-    width:100px;
+    width:100%;
     max-width:583px;
     min-height:380px;
     display:grid;
@@ -259,9 +263,14 @@ body > main > article > section.twoSlide > div:nth-child(2) > ol{
     justify-content: center;
     align-items: center;
     justify-items: center;
+    margin-top:70px;
+    margin-bottom:70px;
 }
 .holiday > h3{
     color:white;
     font-size:70px;
     text-shadow: 2px 2px black;
+}
+body > main > article > section:nth-child(9){
+    width:100%;
 }
