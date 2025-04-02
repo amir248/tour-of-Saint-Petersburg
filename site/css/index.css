@@ -7,6 +7,7 @@
     --max-width:1920px;
     --same-width:100%;
     --center-width:1278px;
+    --that-block:1300px;
 }
 body{
     margin-left: auto;
@@ -139,4 +140,44 @@ body > main > article > ol,body > main > article > ul{
 .boxMenu > a:hover{
     color:aqua;
     transition: all 1s;
+}
+
+
+/* ARTICLE */
+article{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    width:100%;
+    /* grid-template-columns: repeat(1920px, 1fr);/ */
+}
+.category{
+    width:100%;
+    max-width:var(--that-block);
+    display:grid;
+    min-height:500px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.category > section > div > img{
+    width:72px;
+}
+.category > section > div{
+    min-width:150px;
+    width:100%;
+    max-width:200px;
+}
+.category > section{
+    display:grid;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+
+    width:100%;
+    max-width:1300px;
+    /* flex-wrap:wrap; */
+    grid-template-columns: repeat(auto-fill, minmax(120px,320px));
+
 }
