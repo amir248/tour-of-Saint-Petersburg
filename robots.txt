@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tour-of-spb.fonolog.ru/sitemap.xml
