@@ -274,3 +274,37 @@ body > main > article > section.twoSlide > div:nth-child(2) > ol{
 body > main > article > section:nth-child(9){
     width:100%;
 }
+
+
+
+
+footer{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items:center;
+    /* width:100px; */
+    min-height:484px;
+    /* max-width:1300px; */
+    grid-template-columns: repeat(auto-fill,minmax(140px,700px));
+    /* grid-template-rows: 3ch auto minmax(10px, 60px); */
+}
+/* body > main > footer > section:nth-child(2) */
+footer > section:nth-child(2){
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(140px,300px));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+footer > section > div > div > img{
+    width:20px;
+}
+footer > strong{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    justify-items:center;
+    grid-template-columns: 1;
+}

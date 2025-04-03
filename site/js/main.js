@@ -18,8 +18,20 @@ function menu(){
         resolve(mOpen());
     })
 };//first()
+
+function date(){
+    return new Promise((resolve)=>{
+        function d(){
+            const openD=document.createElement('script');
+            openD.src="site/js/date.js";
+            document.querySelector('body').append(openD);
+        }
+        resolve(d());
+    })
+};//date();
 async function main(){
     // await first();
     await menu();
+    await date();
 };//main();
 main();
