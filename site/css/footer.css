@@ -16,9 +16,9 @@ footer > div{
     align-items: center;
     justify-items:center;
     /* width:100px; */
-    min-height:484px;
+    min-height:384px;
     /* max-width:1300px; */
-    grid-template-columns: repeat(auto-fill,minmax(140px,700px));
+    grid-template-columns: repeat(auto-fill,minmax(140px,590px));
 }
 footer > div > section > ul{
     margin: 7%;
@@ -27,7 +27,7 @@ footer > div > section > ul{
 footer > div > section:nth-child(2){
     width:100%;
     display:grid;
-    grid-template-columns: repeat(auto-fill,minmax(140px,300px));
+    grid-template-columns: repeat(auto-fill,minmax(140px,270px));
     justify-content: center;
     align-items: center;
     justify-items: center;
