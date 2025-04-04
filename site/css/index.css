@@ -2,7 +2,11 @@
     margin:0;
     padding:0;
 }
-
+@font-face {
+    font-family: "Ubuntu";
+    src:url("/../Ubuntu/Ubuntu-Regular.ttf") format("ttf");
+  }
+  
 :root{
     --max-width:1920px;
     --same-width:100%;
@@ -15,6 +19,7 @@ body{
     width:100%;
     max-width:var(--max-width);
     font-size:20px;
+    font-family: "Ubuntu";
 }
 main{
     width:100%;
@@ -65,6 +70,8 @@ header > nav > div > span:nth-child(2){
 header > h1{
     text-shadow:-2px -2px 3px black;
     text-shadow:2px 2px black;
+    width:100%;
+    max-width:777px;
 }
 header > nav > ul > li{
     display:inline-block;
