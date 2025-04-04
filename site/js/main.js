@@ -6,7 +6,7 @@ function first(){
             document.querySelector('body').append(first);
         }
         resolve(f());
-    })
+    });
 };//first()
 function menu(){
     return new Promise((resolve)=>{
@@ -14,9 +14,12 @@ function menu(){
             const openM=document.createElement('script');
             openM.src='site/js/menu.js';
             document.querySelector('body').append(openM);
+            document.querySelector('nav').style.opacity=`1`;
         }
-        resolve(mOpen());
-    })
+        setTimeout(()=>{
+            resolve(mOpen());
+        },1700);
+    });
 };//first()
 
 function date(){
@@ -26,8 +29,10 @@ function date(){
             openD.src="site/js/date.js";
             document.querySelector('body').append(openD);
         }
-        resolve(d());
-    })
+        setTimeout(()=>{
+            resolve(d());
+        },1300);
+    });
 };//date();
 function includeHTML(){
     return new Promise((resolve)=>{

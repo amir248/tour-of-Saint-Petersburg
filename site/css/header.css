@@ -9,10 +9,12 @@ nav{
     justify-content: center;
     align-items: center;
     justify-items:center;
-    transition:all 1s;
+    transition:all 3s ease-in-out;
+    opacity:0;
 }
 nav > strong{
     font-size:30px;
+    transition:all 1s;
 }
 nav > div{
     min-height: 30px;
@@ -38,6 +40,7 @@ nav > ul > li > a{
     color:white;
     text-shadow:black 1px 1px;
     text-decoration:none;
+    transition:all 1s;
 }
 nav > ul > li > a:hover{
     color:#DF6951;
@@ -52,11 +55,13 @@ nav > button{
     border-radius: 7px;
     border: none;
     font-size:20px;
+    transition:all 1s;
 }
 @media(max-width:700px){
     
     nav > ul{
         display:none;
+        transition:all 1s;
     }
     
    nav > div > span{
@@ -65,11 +70,13 @@ nav > button{
         height:3px;
         border-radius:7px;
         background-color: #DF6951;
+        transition:all 1s;
     }
 }
 @media(min-width:700px){
    nav > div{
         display:none;
+        transition:all 1s;
     }
 }
 
@@ -87,6 +94,8 @@ nav > button{
     position:fixed;
     transition:all 1s;
     opacity:0;
+    transition:all 1s;
+
 }
 .boxMenu > a{
     font-size:0;
