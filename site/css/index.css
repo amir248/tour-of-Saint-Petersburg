@@ -4,9 +4,16 @@
 }
 @font-face {
     font-family: "Ubuntu";
-    src:url("../Ubuntu/Ubuntu-Regular.ttf") format("ttf");
-  }
-  
+    src: url("../../site/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "Ubuntu";
+    src: url("../../site/Ubuntu/Ubuntu-Medium.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
 :root{
     --max-width:1920px;
     --same-width:100%;
