@@ -1,0 +1,48 @@
+footer{
+    width:100%;
+    /* display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items:center; */
+    /* width:100px; */
+    /* min-height:484px; */
+    /* max-width:1300px; */
+    /* grid-template-columns: repeat(auto-fill,minmax(140px,700px)); */
+    /* grid-template-rows: 3ch auto minmax(10px, 60px); */
+}
+footer > div{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items:center;
+    /* width:100px; */
+    min-height:484px;
+    /* max-width:1300px; */
+    grid-template-columns: repeat(auto-fill,minmax(140px,700px));
+}
+footer > div > section > ul{
+    margin: 7%;
+}
+/* body > main > footer > section:nth-child(2) */
+footer > div > section:nth-child(2){
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(140px,300px));
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+body > main:nth-child(1) > footer:nth-child(3) > div:nth-child(1) > section:nth-child(1) > div:nth-child(1) > p:nth-child(2){
+    width:100%;
+    max-width:300px;
+}
+footer > div > section > div > div > img{
+    width:20px;
+}
+footer > strong{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    justify-items:center;
+    grid-template-columns: 1;
+}

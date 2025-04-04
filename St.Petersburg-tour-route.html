@@ -26,6 +26,8 @@
             max-width:1300px;
         }
     </style>
+    <link rel="stylesheet" href="site/css/header.css">
+    <link rel="stylesheet" href="site/css/footer.css">
      <script type="application/ld+json">
         {
           "@context": "http://schema.org",
@@ -43,6 +45,7 @@
 </head>
 <body>
     <main>
+        <nav w3-include-html="site/include/header.html"></nav>
         <article>
             <h1>Экскурсия по Санкт Петерсбургу</h1>
             
@@ -106,7 +109,9 @@
             </script>
             
             </section>
+            <footer w3-include-html="site/include/footer.html"></footer>
         </article>
     </main>
+    <script defer src="/site/js/main.js"></script>
 </body>
 </html>

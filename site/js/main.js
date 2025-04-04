@@ -29,8 +29,30 @@ function date(){
         resolve(d());
     })
 };//date();
+function includeHTML(){
+    return new Promise((resolve)=>{
+        function include(){
+            const incl=document.createElement('script');
+            incl.src="site/js/includeHTML.js";
+            document.querySelector('body').append(incl);
+        }
+        resolve(include());
+    });
+};//includeHTML()
+function clicker(){
+    return new Promise((resolve)=>{
+        function cl(){
+            const c=document.createElement('script');
+            c.src="site/js/click.js";
+            document.querySelector('body').append(c);
+        }
+        resolve(cl());
+    });
+};//clicker
 async function main(){
+    await includeHTML();
     // await first();
+    await clicker();
     await menu();
     await date();
 };//main();
