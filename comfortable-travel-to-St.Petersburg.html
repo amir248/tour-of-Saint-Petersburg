@@ -35,14 +35,25 @@
         body > main > article > ol,ul{
             margin-left:37px;
         }
-        body > main:nth-child(1) > article:nth-child(1) > picture:nth-child(6) > img:nth-child(1){
+        .secondImg{
             float:right;
             width:100%;
             max-width:400px;
             border-radius:17px 0 0 17px;
         }
+        .firstImg{
+            width:100%;
+            max-width:400px;
+            float:left;
+            border-radius:0 17px 17px 0;
+            margin-right: 37PX;
+        }
         @media(max-width:800px){
-            body > main:nth-child(1) > article:nth-child(1) > picture:nth-child(6) > img:nth-child(1){
+            .secondImg{
+                max-width:100%;
+                border-radius:0;
+            }
+            .firstImg{
                 max-width:100%;
                 border-radius:0;
             }
@@ -60,8 +71,8 @@
             "name": "Татьяна Павловна"
           },
           "datePublished": "2025-04-24T10:57",
-          "datePublished": "2025-04-24T14:22",
-          "image": "https://tour-of-spb.fonolog.ru/site/img/spb.jpg",
+          "dateModified": "2025-04-25T07:47",
+          "image": "site/img/susar.jpeg",
           "articleBody": "Северная столица России — это город с богатейшей историей и культурой, который особенно привлекателен для путешественников старшего поколения. Специально разработанные туры позволяют пенсионерам насладиться всеми достопримечательностями города в комфортном режиме."
         }
         </script>
@@ -70,7 +81,9 @@
     <main>
         <article>
             <nav w3-include-html="site/include/header.html"></nav>
-    
+            <picture>
+                <img src="site/img/susar.jpeg" alt="travel for St. Petersburg" class="firstImg">
+            </picture>
             <h1>Комфортное путешествие в Санкт-Петербург для пенсионеров. 
                 Почему Санкт-Петербург идеально подходит для пенсионеров</h1>
                 <p>Северная столица России — это город с богатейшей историей и культурой, который особенно привлекателен для путешественников старшего поколения. Специально разработанные туры позволяют пенсионерам насладиться всеми достопримечательностями города в комфортном режиме.</p>
@@ -85,7 +98,7 @@
             </ul>
 
 <picture>
-    <img src="site/img/ok.jpeg" alt="Tatiana Pavlovna">
+    <img src="site/img/ok.jpeg" alt="Tatiana Pavlovna" class="secondImg">
 </picture>
 <h2>Основные достопримечательности</h2>
     <ul>
