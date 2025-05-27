@@ -9,7 +9,7 @@ function openMenu(){
     // document.querySelector('.boxMenu').style.cssText=`height:100vh;`;
     let oK=document.createElement('div');
     oK.classList.add('boxMenu');
-    oK.innerHTML='<a href="/">Home</a><a href="/about">About</a><a href="/St.Petersburg-tour-route">Tour</a><a href="tel:+9893619813">89893619813</a>';
+    oK.innerHTML='<a href="/">Home</a><a href="/about">About</a><a href="/travel">Travel</a><a href="/travel-presentation">Презентация</a><a href="tel:+9893619813">89893619813</a>';
     document.querySelector('body').prepend(oK);
     setTimeout(()=>{
         document.querySelector('.boxMenu').style.cssText=`
