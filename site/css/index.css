@@ -83,6 +83,7 @@ header > nav > ul > li > a{
     color:white;
     text-shadow:black 1px 1px;
     text-decoration:none;
+    margin-right:3%;
 }
 header > nav > ul > li > a:hover{
     color:#DF6951;
