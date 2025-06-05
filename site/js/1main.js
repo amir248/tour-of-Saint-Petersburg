@@ -27,8 +27,25 @@ function changePhotoGg(){
         resolve(toGo());
     });
 }
+function tawk(){
+    return new Promise((resolve)=>{
+        function newTawk(){
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/67f4cf8ec8dab5190d8eeb2c/1ioa4lhv2';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+            })();
+        }
+        resolve(newTawk());
+    })
+}
 async function main(){
     await menu();
     await changePhotoGg();
+    await tawk();
 }
 main();
