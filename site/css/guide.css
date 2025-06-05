@@ -175,7 +175,7 @@ article > section{
     width:100%;
     gap:17px;
 }
-.centerBox > div > button{
+.centerBox > div > a > button{
     width:100%;
     max-width:200px;
     height:40px;
