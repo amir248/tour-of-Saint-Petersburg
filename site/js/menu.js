@@ -20,10 +20,7 @@ function openMenu(){
         for(let i=+0;i<=document.querySelectorAll(".boxMenu > a").length; i++){
             document.querySelectorAll('.boxMenu > a')[i].style.fontSize=`30px`;
         }
-        
-        // document.querySelectorAll('.boxMenu > a')[1].style.fontSize=`30px`;
-        // document.querySelectorAll('.boxMenu > a')[2].style.fontSize=`30px`;
-        // document.querySelectorAll('.boxMenu > a')[3].style.fontSize=`30px`;
+
     },1);
     document.querySelector('.boxMenu').addEventListener('click',()=>{
         document.querySelector('.boxMenu').style.cssText=`top:100%;font-size:0;height:0;transform:all 1s;opacity:0;`;
