@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: "Roboto_Slab";
-    src: url("../../public/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf") format("truetype");
+    src: url("../../site/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf") format("truetype");
     font-style: normal; 
     font-weight: normal; 
 }
@@ -13,7 +13,7 @@ body{
     max-width:1300px;
     margin-left:auto;
     margin-right:auto;
-    background-image: url("../../public/imgBg/8.jpg");
+    background-image: url("../../site/imgBg/8.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

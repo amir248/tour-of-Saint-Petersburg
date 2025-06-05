@@ -10,7 +10,7 @@ function menu(){
 function changePhotoGg(){
     return new Promise((resolve)=>{
         function toGo(){
-            const imgBg=['public/imgBg/1.jpg','public/imgBg/2.jpg','public/imgBg/3.jpg','public/imgBg/4.jpg','public/imgBg/5.jpg','public/imgBg/6.jpg','public/imgBg/7.jpg','public/imgBg/8.jpg','public/imgBg/9.jpg',];
+            const imgBg=['site/imgBg/1.jpg','site/imgBg/2.jpg','site/imgBg/3.jpg','site/imgBg/4.jpg','site/imgBg/5.jpg','site/imgBg/6.jpg','site/imgBg/7.jpg','site/imgBg/8.jpg','site/imgBg/9.jpg',];
             let n=+0;
             setInterval(()=>{
                 document.querySelector('body').style.cssText=`
