@@ -211,6 +211,9 @@ article > p{
     gap: 3px;
     margin:17px;
 }
+.category > section > div{
+    font-size:12px;
+}
 .twoSlide{
     margin:0;
     padding:0;
