@@ -31,6 +31,63 @@
     article > ul > li{
         margin-left:37px;
     }
+    article > strong > ul > li{
+        margin-left:37px;
+    }
+    article > strong{
+        display:grid;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+    article > strong > video{
+        width:100%;
+        max-width:470px;
+        
+    }
+    .choose{
+        width:100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        flex-wrap:wrap;
+    }
+    .choose > button{
+        width:100%;
+        max-width:170px;
+        border-radius: 17px;
+        height:50px;
+    }
+    .choose > button:nth-child(1){
+        background-color: aquamarine;
+        transition:all ease 1s;
+    }
+    .choose > button:nth-child(1):hover{
+        background-color: rgb(0, 128, 85);
+        color:white;
+    }
+    .choose > button:nth-child(2){
+        background-color:orchid;
+        transition:all ease 1s;
+    }
+    .choose > button:nth-child(2):hover{
+        background-color:rgb(126, 0, 122);
+        color:white;
+    }
+    .choose > button:nth-child(3){
+        background-color: coral;
+        transition:all ease 1s;
+    }
+    .choose > button:nth-child(3):hover{
+        background-color: rgb(143, 66, 38);
+        color:white;
+    }
+    #two,#three{
+        display:none;
+        opacity: 0;
+        transition:all ease 1s;
+    }
 </style>
     <link rel="stylesheet" href="site/css/header.css">
     <link rel="stylesheet" href="site/css/footer.css">
@@ -113,12 +170,85 @@
             <p>Также в Зеленогорске есть несколько музеев, таких как музей «Невская застава» и музей «Дом-музей Н. А. Брюллова».</p>
 
             <p>Кроме того, в городе можно посетить местные санатории и пансионаты, где предлагаются различные оздоровительные программы и процедуры.</p>
-
+            <strong>
+                <ul>
+                    <h3>План тура: </h3>
+                    <li>Змеиногорск три дня первый день прогулка по городу, плов.</li>
+                    <li>2 день пешая прогулка, баня, день на камнерезный завод,дискотека.</li>
+                    <li>4 день Манжирок ,Майминск район.сплав  по Катуни.</li>
+                    <li>6,7 день деревня Чаган-Чемал  дня,размещение  Фараонова дача.</li>
+                </ul>
+                
+                <video controls id="one">
+                    <source src="video/one.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video>
+                <video controls id="two">
+                    <source src="video/two.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video> 
+                <video controls id="three">
+                    <source src="video/three.mp4" type="video/mp4">
+                    
+                    Your browser does not support the video tag.
+                </video> 
+                <div class="choose">
+                    <button id="btnOne">первое</button>
+                    <button id="btnTwo">второе</button>
+                    <button id="btnThree">тертье</button>
+                </div>
+            </strong>
             <h3>Заключение</h3>
 
             <p>Тур по Сестрорецку, Солнечному, Репино, Комарово и Зеленогорску — это отличная возможность познакомиться с окрестностями Санкт-Петербурга и насладиться красивыми пейзажами, свежим воздухом и спокойствием. Этот маршрут подойдёт как для любителей истории и культуры, так и для тех, кто ищет отдых и релаксацию.</p>
         </article>
-    
+        <script>
+            document.querySelector("#btnOne").addEventListener("click",()=>{
+                document.querySelector("#three").pause();
+                document.querySelector("#two").pause();
+                document.querySelector("#one").style.display="block";
+                document.querySelector("#one").play();
+                document.querySelector("#three").style.opacity="0";
+                document.querySelector("#two").style.opacity="0";
+
+                setTimeout(()=>{
+                    document.querySelector("#one").style.opacity=`1`;
+                     document.querySelector("#three").style.display="none";
+                    document.querySelector("#two").style.display="none";
+                },100)
+            });
+            document.querySelector("#btnTwo").addEventListener("click",()=>{
+                document.querySelector("#three").pause();
+                document.querySelector("#one").pause();
+                document.querySelector("#two").style.display="block";
+                document.querySelector("#two").play();
+                document.querySelector("#one").style.opacity="0";
+                document.querySelector("#three").style.opacity="0";
+            
+
+                setTimeout(()=>{
+                    document.querySelector("#one").style.display=`none`;
+                     document.querySelector("#three").style.display="none";
+                    document.querySelector("#two").style.opacity="1";
+                },100)
+            })
+            document.querySelector("#btnThree").addEventListener("click",()=>{
+                document.querySelector("#one").pause();
+                document.querySelector("#two").pause();
+                document.querySelector("#three").style.display="block";
+                document.querySelector("#three").play();
+                document.querySelector("#one").style.opacity="0";
+                document.querySelector("#two").style.opacity="0";
+
+                setTimeout(()=>{
+                    document.querySelector("#three").style.opacity=`1`;
+                     document.querySelector("#one").style.display="none";
+                    document.querySelector("#two").style.display="none";
+                },100)
+            });
+        </script>
         <footer w3-include-html="site/include/footer.html"></footer>
     </main>
     <script defer src="/site/js/main.js"></script>
